@@ -26,13 +26,6 @@ export default function Home() {
             <p>Coding</p>
           </a>
 
-          <a
-            href="https://facebook.com/holovin/"
-            className={styles.card}
-          >
-            <h2>Facebook</h2>
-            <p>Social</p>
-          </a>
           <a href="https://github.com/holovin777" className={styles.card}>
             <h2>GitHub</h2>
             <p>Developing</p>
