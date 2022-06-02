@@ -2,46 +2,67 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export async function getServerSideProps() {
+  const url = process.env.GITHUB_URL
+  const myHeaders = {
+      'Content-Type': 'application/json',
+      'Authorization': process.env.GITHUB_TOKEN,
+  }
+  const res = await fetch(url, {
+    method: 'GET',
+    headers: myHeaders
+  })
+  const data = await res.json()
+  return {
+    props: { data }, // will be passed to the page component as props
+  }
+}
+
+export default function Home({data}) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Viktor Holovin</title>
+        <title>{data.name}</title>
         <meta name="description" content="Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Viktor Holovin
+          {data.name}
         </h1>
 
         <p className={styles.description}>
-	  Web developer
+	  {data.bio} 
         </p>
 
         <div className={styles.grid}>
-          <a href="https://blog.holovin.com/" className={styles.card}>
-            <h2>Blog</h2>
-            <p>Coding</p>
-          </a>
 
-          <a href="https://github.com/holovin777" className={styles.card}>
-            <h2>GitHub</h2>
+          <a href={data.html_url} className={styles.card}>
+            <h2>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg"
+                alt="Picture of the author"
+                height={28}
+              /> Github
+	    </h2>
             <p>Developing</p>
           </a>
 
-          <a href="https://instagram.com/holovin777" className={styles.card}>
-            <h2>Instagram</h2>
-            <p>Photos</p>
+          <a href={`https://twitter.com/`+data.twitter_username} className={styles.card}>
+            <h2>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg"
+                alt="Picture of the author"
+                height={28}
+              /> Twitter
+	    </h2>
+            <p>Tweets</p>
           </a>
 
-          <a
-            href="https://facebook.com/holovin/"
-            className={styles.card}
-          >
-            <h2>Facebook</h2>
-            <p>Social</p>
+          <a href={data.blog} className={styles.card}>
+            <h2>Blog</h2>
+            <p>Developing</p>
           </a>
 
         </div>
