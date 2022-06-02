@@ -75,7 +75,6 @@ export default function Home({data}) {
           target="_blank"
           rel="noopener noreferrer"
         >
-	  Viktor Holovin
         </a>
       </footer>
     </div>
