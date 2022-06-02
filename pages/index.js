@@ -69,6 +69,7 @@ export default function Home({data}) {
       </main>
 
       <footer className={styles.footer}>
+	{data.location}
         <a
           href="https://holovin.com/"
           target="_blank"
