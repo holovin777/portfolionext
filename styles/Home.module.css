@@ -49,10 +49,17 @@
   text-align: center;
 }
 
+@keyframes descriptionshow {
+  from {font-size: 0px;}
+}
+
 .description {
+  color: #76FF03;
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  animation-name: descriptionshow;
+  animation-duration: 1s;
 }
 
 .code {
@@ -72,6 +79,12 @@
   max-width: 800px;
 }
 
+@keyframes cardshow {
+  0%   {background-color: black;}
+  50%  {background-color: blue;}
+  100% {background-color: black;}
+}
+
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -82,6 +95,8 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  animation-name: cardshow;
+  animation-duration: 2s;
 }
 
 .card:hover,
