@@ -1,12 +1,22 @@
 # PortfolioNext
 
+## Install
+```bash
+git clone https://github.com/holovin777/portfolionext.git
+cd portfolionext
+vim .env.local
+```
+```javascript
+GITHUB_URL=https://api.github.com/users/YOUR_LOGIN
+GITHUB_TOKEN=YOUR_TOKEN
+```
+
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
-npm run dev
-# or
+yarn install
 yarn dev
 ```
 

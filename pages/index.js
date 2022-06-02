@@ -60,7 +60,7 @@ export default function Home({data}) {
             <p>Tweets</p>
           </a>
 
-          <a href={data.blog} className={styles.card}>
+          <a href={`https://`+data.blog} className={styles.card}>
             <h2>Blog</h2>
             <p>Developing</p>
           </a>
