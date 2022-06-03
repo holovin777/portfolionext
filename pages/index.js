@@ -46,7 +46,7 @@ export default function Home({data}) {
                 height={28}
               /> Github
 	    </h2>
-            <p>Developing</p>
+            <p>Development</p>
           </a>
 
           <a href={`https://twitter.com/`+data.twitter_username} className={styles.card}>
