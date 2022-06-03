@@ -62,7 +62,7 @@ export default function Home({data}) {
 
           <a href={`https://`+data.blog} className={styles.card}>
             <h2>Blog</h2>
-            <p>Developing</p>
+            <p>Development</p>
           </a>
 
         </div>
