@@ -40,10 +40,11 @@ export default function Home({data}) {
 
           <a href={data.html_url} className={styles.card}>
             <h2>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg"
+              <Image
+                src="/github.svg"
                 alt="Picture of the author"
-                height={28}
+	        width={24}
+                height={24}
               /> Github
 	    </h2>
             <p>Development</p>
@@ -51,10 +52,11 @@ export default function Home({data}) {
 
           <a href={`https://twitter.com/`+data.twitter_username} className={styles.card}>
             <h2>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg"
+              <Image
+                src="/twitter.svg"
                 alt="Picture of the author"
-                height={28}
+	        width={24}
+                height={24}
               /> Twitter
 	    </h2>
             <p>Tweets</p>
