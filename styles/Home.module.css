@@ -59,7 +59,7 @@
   line-height: 1.5;
   font-size: 1.5rem;
   animation-name: descriptionshow;
-  animation-duration: 1s;
+  animation-duration: 0.4s;
 }
 
 .code {
