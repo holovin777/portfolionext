@@ -5,7 +5,7 @@
 }
 
 .image {
-  animation: moon-sun-spin infinite 20s linear;
+  animation: moon-sun-spin infinite 60s linear;
 }
 
 @keyframes moon-sun-spin {
