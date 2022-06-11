@@ -36,7 +36,7 @@ export default function Home({data}) {
         </h1>
 
         <p className={styles.description}>
-	  {data.bio} 
+	  <b>{data.bio}</b>
         </p>
 
         <div className={styles.grid}>
