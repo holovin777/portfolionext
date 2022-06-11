@@ -14,6 +14,19 @@ a {
   text-decoration: none;
 }
 
+@keyframes imgshow {
+  0% {opacity: 0.0;}
+  25% {opacity: 0.0;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.75;}
+  100% {opacity: 1;}
+}
+
+img {
+  animation-name: imgshow;
+  animation-duration: 1.2s;
+}
+
 * {
   box-sizing: border-box;
 }
