@@ -26,10 +26,11 @@ export default function ThemeChanger() {
         onClick={changeTheme}
       >
         <Image
+	  className={styles.image}
           src={moonSun}
           alt="Picture of the sun"
-          width={48}
-          height={48}
+          width={42}
+          height={42}
         />
       </button>
       <style jsx global>{`

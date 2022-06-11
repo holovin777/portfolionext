@@ -3,3 +3,17 @@
   right: 20px;
   top: 20px;
 }
+
+.image {
+  animation: moon-sun-spin infinite 20s linear;
+}
+
+@keyframes moon-sun-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
