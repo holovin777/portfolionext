@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import ThemeChanger from '../components/themechanger'
 
 export async function getServerSideProps() {
   const url = process.env.GITHUB_URL
@@ -26,6 +27,8 @@ export default function Home({data}) {
         <meta name="description" content="Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <ThemeChanger />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
