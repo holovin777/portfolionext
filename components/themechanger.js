@@ -28,8 +28,8 @@ export default function ThemeChanger() {
         <Image
           src={moonSun}
           alt="Picture of the sun"
-          width={64}
-          height={64}
+          width={48}
+          height={48}
         />
       </button>
       <style jsx global>{`
