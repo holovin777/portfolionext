@@ -23,6 +23,7 @@ export default function ThemeChanger() {
   return (
     <div className={styles.themechanger}>
       <button
+	className="button-image"
         onClick={changeTheme}
       >
         <Image
@@ -38,7 +39,7 @@ export default function ThemeChanger() {
           background-color: ${backgroundColor};
           color: ${fontColor};
         }
-	button {
+	.button-image {
 	  background-color: transparent;
           border: none;
 	}
