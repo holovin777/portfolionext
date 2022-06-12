@@ -42,13 +42,12 @@ export default function Home({data}) {
         </p>
 
         <div className={styles.grid}>
-
 	  <Social url={data.html_url} name="GitHub" picture="/github.svg" description="Development" />
 	  <Social url={`https://twitter.com/`+data.twitter_username} name="Twitter" picture="/twitter.svg" description="Tweets" />
 	  <Social url={`https://`+data.blog} name="Blog" picture="/logonextblog.svg" description="Blog generated from GitHub" />
-
         </div>
       </main>
+
       <Footer location={data.location} />
     </div>
   )
