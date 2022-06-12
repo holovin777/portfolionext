@@ -7,7 +7,6 @@
 }
 
 .themechanger {
-  z-index: -1;
   position: fixed;
   right: 20px;
   top: 20px;
