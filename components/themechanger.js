@@ -29,8 +29,8 @@ export default function ThemeChanger() {
 	  className={styles.image}
           src={moonSun}
           alt="Picture of the moonSun"
-          width={36}
-          height={36}
+          width={28}
+          height={28}
         />
       </button>
       <style jsx global>{`

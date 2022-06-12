@@ -8,8 +8,8 @@ export default function Footer({location}) {
         className={styles.image}
         src="/earth.svg"
         alt="Picture of the Earth"
-        width={36}
-        height={36}
+        width={18}
+        height={18}
       /> {location}
     </footer>
   )

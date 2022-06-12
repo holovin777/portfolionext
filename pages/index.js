@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import ThemeChanger from '../components/themechanger'
+import Social from '../components/social'
 import Footer from '../components/footer'
+import styles from '../styles/Home.module.css'
 
 export async function getServerSideProps() {
   const url = process.env.GITHUB_URL
@@ -42,34 +43,9 @@ export default function Home({data}) {
 
         <div className={styles.grid}>
 
-          <a href={data.html_url} className={styles.card}>
-            <h2>
-              <Image
-                src="/github.svg"
-                alt="Picture of the author"
-	        width={24}
-                height={24}
-              /> Github
-	    </h2>
-            <p>Development</p>
-          </a>
-
-          <a href={`https://twitter.com/`+data.twitter_username} className={styles.card}>
-            <h2>
-              <Image
-                src="/twitter.svg"
-                alt="Picture of the author"
-	        width={24}
-                height={24}
-              /> Twitter
-	    </h2>
-            <p>Tweets</p>
-          </a>
-
-          <a href={`https://`+data.blog} className={styles.card}>
-            <h2>Blog</h2>
-            <p>Development</p>
-          </a>
+	  <Social url={data.html_url} name="GitHub" picture="/github.svg" description="Development" />
+	  <Social url={`https://twitter.com/`+data.twitter_username} name="Twitter" picture="/twitter.svg" description="Tweets" />
+	  <Social url={`https://`+data.blog} name="Blog" picture="/logonextblog.svg" description="Blog generated from GitHub" />
 
         </div>
       </main>
