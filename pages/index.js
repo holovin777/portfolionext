@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import ThemeChanger from '../components/themechanger'
+import Footer from '../components/footer'
 
 export async function getServerSideProps() {
   const url = process.env.GITHUB_URL
@@ -72,16 +73,7 @@ export default function Home({data}) {
 
         </div>
       </main>
-
-      <footer className={styles.footer}>
-	{data.location}
-        <a
-          href="https://holovin.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </footer>
+      <Footer location={data.location} />
     </div>
   )
 }
