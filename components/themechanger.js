@@ -39,7 +39,7 @@ export default function ThemeChanger() {
           color: ${fontColor};
         }
 	button {
-	  background-color: ${backgroundColor};
+	  background-color: transparent;
           border: none;
 	}
       `}</style>
