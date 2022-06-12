@@ -40,7 +40,6 @@ export default function ThemeChanger() {
         }
 	button {
 	  background-color: ${backgroundColor};
-	  border-color: ${backgroundColor};
           border: none;
 	}
       `}</style>
