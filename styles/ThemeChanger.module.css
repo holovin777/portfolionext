@@ -1,11 +1,17 @@
+@keyframes imgshow {
+  0% {opacity: 0.0;}
+  25% {opacity: 0.0;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.75;}
+  100% {opacity: 1;}
+}
+
 .themechanger {
   position: absolute;
   right: 20px;
   top: 20px;
-}
-
-.image {
-  animation: moon-sun-spin infinite 60s linear;
+  animation-name: imgshow;
+  animation-duration: 2s;
 }
 
 @keyframes moon-sun-spin {
@@ -17,3 +23,6 @@
   }
 }
 
+.image {
+  animation: moon-sun-spin infinite 60s linear;
+}
