@@ -28,7 +28,7 @@ export default function ThemeChanger() {
         <Image
 	  className={styles.image}
           src={moonSun}
-          alt="Picture of the sun"
+          alt="Picture of the moonSun"
           width={36}
           height={36}
         />
