@@ -39,19 +39,9 @@
 .description {
   color: #76FF03;
   margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 28px;
   animation-name: descriptionshow;
   animation-duration: 1s;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -60,30 +50,6 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-}
-
-@keyframes cardshow {
-  0%   {background-color: black;}
-  50%  {background-color: blue;}
-  100% {background-color: black;}
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
 .logo {

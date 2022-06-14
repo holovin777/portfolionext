@@ -1,3 +1,9 @@
+@keyframes cardshow {
+  0%   {background-color: black;}
+  50%  {background-color: blue;}
+  100% {background-color: black;}
+}
+
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -10,4 +16,22 @@
   max-width: 300px;
   animation-name: cardshow;
   animation-duration: 2s;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
